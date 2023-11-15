@@ -30,7 +30,7 @@ References: C++ Language Tutorial:
 5. In `car.h` Define a (public) child of `CVehicle` (this implements inheritance) named `CCa`r and give it a public string named `engine`
     - Give it a public constructor that takes `numWheels`, `color`, and `engine` and sets these values accordingly.  
 
-6. Comment out or delete the line that says “/* DELETE FOR PART B”, compile and run the code and then answer these questions: 
+6. Comment out or delete the line that says “/* DELETE FOR PART 6”, compile and run the code and then answer these questions: 
     - How many CVehicle objects are declared in main? 
     - How many times was the CVehicle Default Constructor called? Given your answer to #1, how is this possible? 
     - How many times was the CVehicle Destructor called?  
