@@ -1,0 +1,68 @@
+//my main
+#include "vehicle.h"
+#include "car.h"
+
+int main()
+{
+    cout << "Starting main Program\n";
+    //instantiate a CVehicle
+    CVehicle randomVehicle("Alfa",4,"Blue");
+
+    /*Delete for part 6
+    //Now let's explore inheritance a little... even though either CCar has owner, numWheels, or color they INHERIT from CVehicle!
+    CCar Volt(4,"Bronze","4 Cylinder");
+    CCar Sienna(4,"Green","V6");
+    //*/
+
+    cout << "Leaving main Program\n";
+    return 0;
+}
+
+//my vehichle .h file
+
+#include <iostream>
+using namespace std;
+
+class CVehicle {
+    private: 
+    string owner;
+    public:
+    int numWheels;
+    protected:
+    string color;
+
+};
+
+//Making the public default constructor
+CVehicle() {
+    cout<<"Default Constructor of CVehicle called: " << endl; 
+    owner = "Not Specified";
+    numWheels = -1;
+    color = "Not Specified";
+    cout<<"Leaving CVehicle Default Constructor" << endl;
+}
+CVehicle(string newOwner, int numWheels, string newColor) : owner(newOwner), numWheels(newNumWheels), color(newColor) {
+
+}
+~CVehicle (){
+    cout<<"CVehicle Destructor called. Deleting" << owner<< "'s " << color << " vehicle" << endl;
+    return 0;
+};
+
+
+
+
+// my unfinished car.h file
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class CCar : public CVehicle{
+    public:
+    string engine;
+
+    //Make constructor with arguments
+    CCar()
+}
+
